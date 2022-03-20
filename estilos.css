@@ -1,0 +1,414 @@
+body{
+	background: url("https://st1.uvnimg.com/dims4/default/447936a/2147483647/thumbnail/400x225/quality/75/?url=https%3A%2F%2Fuvn-brightspot.s3.amazonaws.com%2Fassets%2Fvixes%2Fbtg%2Ftech.batanga.com%2Ffiles%2FFondos-para-paginas-web.jpg") no-repeat center fixed;
+    background-size: cover;
+}
+*{
+	font-family: 'Poppins', sans-serif
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: none;
+	border: none;
+	text-transform: capitalize;
+	text-decoration: none;
+	transition: .2s linear
+	background-color: lightgrey;
+	}
+
+
+.btn{
+	margin-top: 1rem;
+	display: inline-block;
+	padding: .8rem 3rem;
+	background: #3956ad;
+	color: #fff;
+	font-size: 1.7rem;
+	cursor: pointer;
+}
+
+.btn:hover{
+	background: #222;
+
+}
+				
+html{
+
+	font-size: 62.5%;
+	overflow-x: hidden;
+	scroll-behavior: smooth;
+	}
+
+
+section{
+	padding: 3rem 9%;
+}
+
+
+
+.heading{
+	background: url(https://thumbs.dreamstime.com/b/dise%C3%B1o-de-fondo-pergamino-papel-marr%C3%B3n-antiguo-con-manchas-vintage-angustiadas-y-salpicador-tinta-centro-desvanecido-color-173533428.jpg) no-repeat;
+	background-size: cover;
+	background-position: center;
+	text-align: center;
+	padding-top: 12rem;
+	padding-bottom: 8rem;
+}
+
+
+.heading h1{
+	color: #000000;
+	font-size: 4rem;
+}
+
+
+.title{
+	display: flex;
+	align-items: center;
+	font-size: 2.5rem;
+	margin-bottom: 3rem;
+	padding: 1.2rem 0;
+	border-bottom: 0.1rem solid rgba(0,0,0,0.7);
+	color: #fff; 
+}
+
+
+.title span{
+	color: #222;
+	padding-left: .7rem;
+}
+
+
+.title a{
+	margin-left: auto;
+	color: #222;
+	font-size: 1.5rem;
+}
+
+
+.title a:hover{
+	color: #fff;
+
+}
+
+
+.header{
+
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1000;
+	background: #386aba;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding:0;
+	padding-right: 100px;
+	padding-left: 100px;
+	box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
+				
+	}
+
+.header .navbar a{
+
+	font-size: 25px;
+	color: #fff;
+	margin: 0 1rem;
+}
+
+.header .navbar a:hover{
+	color: #222;
+}
+
+
+.home{
+	padding-top: 14rem;
+	background: url(fondo.jpg) no-repeat;
+	background-size: cover;
+	background-position: center;
+	position: relative; 
+}
+
+/*---------------------------------------*/
+
+.container{
+  float: left;
+  margin: 50px;
+  width: 99.8%;
+  height: 470px;
+  padding: 50px;
+  margin-left: 0px;
+  border: 0px solid #000;
+  /*background-color: #000;*/
+  border-radius: 12px;
+}
+
+ul, li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+ul.slider{
+  position: relative;
+  width: 100%;
+  height: 410px;
+}
+
+ul.slider li {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    transition: opacity .7s;
+    /*background:#fff;*/
+}
+
+ul.slider li img{
+  width: 100%;
+  height: 410px;
+  border-radius: 5px;
+  object-fit: contain;
+}
+
+ul.slider li:first-child {
+    opacity: 1; /*Mostramos el primer <li>*/
+}
+
+ul.slider li:target {
+    opacity: 1; /*Mostramos el <li> del enlace que pulsemos*/
+}
+
+.menu{
+  text-align: center;
+  margin: 20px;
+}
+
+.menu li{
+  display: inline-block;
+  text-align: center;
+}
+
+.menu li a{
+	font-family: 'Quicksand', sans-serif;
+ 	display: inline-block;
+ 	color: black;
+ 	text-decoration: none;
+ 	background-color: #fff;
+ 	padding: 0px;
+ 	margin-left: 4px;
+ 	margin-right: 4px;
+ 	width: 20px;
+ 	height: 20px;
+ 	font-size: 15px;
+ 	border-radius: 100%;
+ 	border: 1px solid black;
+ }
+
+ .banner-container{
+ 	display: grid;
+ 	grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
+ 	gap: 1.5rem;
+ }
+
+
+ .banner-container .banner{
+ 	position: relative;
+ 	height: 25rem;
+ 	overflow: hidden;
+ }
+
+
+ .banner-container .banner img{
+ 	height: 100%;
+ 	width: 100%;
+ 	object-fit:cover;
+ 
+ }
+
+
+ .banner-container .banner .content{
+ 	position: absolute;
+ 	top: 50%;
+ 	left: 2rem;
+ 	transform: translateY(-50%);
+ }
+
+
+ .banner-container .banner .content span{
+ 	color: #fff;
+ 	font-size: 1.5rem;
+ }
+
+
+ .banner-container .banner .content h3{
+ 	font-size: 2rem;
+ 	padding-top: .5rem;
+ 	color: #fff;
+ }
+
+
+.banner-container .banner .content .btn{
+	padding: .8rem 2.5rem;
+}
+
+
+.banner-container .banner:hover img{
+	transform: scale(1.2);
+}
+
+
+/*estilo del formulario*/
+
+.contenedor .form .form-header .form-title{
+	font-weight: normal;
+	font-family: sans-serif;
+	color: #4777e6;
+	text-align: center;
+	padding: 14px 0;
+}
+
+
+.contenedor .form .form-header .form-title span{
+	color:#fff;
+}
+
+
+.contenedor .form{
+	background: rgba(0,0,0,.6);
+	width: 90%;
+	max-width: 650px;
+	margin: auto;
+	padding: 5px 35px;
+	margin-top: 30px;
+	padding-bottom: 30px;
+	border-radius: 3px; 
+}
+
+
+.contenedor .form .form-label{
+	display: block;
+	color: #4777e6;
+	font-size: 16px;
+	font-family: Roboto;
+	position: relative;
+}
+
+
+.contenedor .form .form-input, .form-textarea{
+	background: rgba(0,0,0,.7);
+	border: none;
+	outline: none;
+	border-bottom: 2px solid #03329e;
+	width: 100%;
+	padding: 12px;
+	margin-bottom: 20px;
+	border-radius: 2px;
+	font-size: 14px;
+	color:#fff;
+	font-family: Roboto; 
+}
+
+
+
+.contenedor .form .form-textarea{
+	resize: vertical;
+	max-height: 150px;
+	min-height: 50px;
+}
+
+
+.contenedor .form .btn-submit{
+	width: 100%;
+	font-family: Roboto;
+	outline: none;
+	background: #011454;
+	font-size: 16px;
+	border: none;
+	color: #fff;
+	padding: 15px 0;
+	cursor: pointer;
+	transition: all .5s ease;
+}
+
+
+.contenedor .form .btn-submit:hover{
+	background: #002ab8;
+}
+
+
+/*Pie de pagina*/
+
+
+.div4{
+	width: auto;
+	height: 205px; overflow: hidden;
+	margin: 90px;
+	border: 0px solid #fff;
+	padding-bottom: 10px;
+	margin-top: 15px;
+	text-align: center;
+	border: 0px solid black;
+	margin-bottom: 0px;
+	background-color:;
+	padding: center;
+}
+.socialmedia{
+	height: 150px;
+	width: 1200px;
+}
+.iconofoot{
+	padding-top: 12px;
+	padding-left: 37%;
+	float: left;
+	width: 120px;
+	height: 120px;
+	padding-right: 25px;
+}
+.iconsocial{
+	padding-top: 35px;
+	float: left;
+	height: 100px;
+	width: 500px;
+}
+.iconsocial ul li{
+	list-style: none;
+	display: inline;
+	margin-left: 25px;
+	margin-right: 25px;
+}
+.iconsocial ul li img{
+	width: 30px;
+	height: 30px;
+	border: 2px solid #00aeff;
+	border-radius: 50%;
+}
+.iconsocial ul li img {
+	border: 5px solid #ccc;
+	float: left;
+	margin: 15px;
+	-webkit-transition: margin 0.5s ease-out;
+	-moz-transition: margin 0.5s ease-out;
+	-ms-transition: margin 0.5s ease-out;
+	transition: margin 0.5s ease-out;
+}
+.iconsocial ul li img:hover {
+	margin-top: 2px;
+}
+
+footer{
+	width: auto; overflow: hidden;
+	height: 50px; overflow: hidden;
+	margin: 0px;
+	background-color: #374fbd;
+}
+
+#pie{
+	padding: 0px;
+	color: #000;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 17px;
+	text-align: center;
+}
